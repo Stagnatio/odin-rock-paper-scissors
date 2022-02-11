@@ -27,11 +27,15 @@ function game() {
             if (computerSelection === "rock") return "Rock beats scissors, computer wins!";
         }
     }
+    /*
     for (let i=0; i<5; i++) {
         const playerSelection = prompt("rock, paper, or scissors?");
         const computerSelection = computerPlay();
         console.log(playRound(playerSelection,computerSelection));
-    }
+    }*/
+    const playerSelection = prompt("rock, paper, or scissors?");
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection,computerSelection));
 }
 
 game();
